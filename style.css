@@ -3,7 +3,6 @@
 body {
   font-family: "Lato", sans-serif;
   color: #6b1a22;
- 
 }
 
 h2 {
@@ -147,6 +146,15 @@ footer p {
 
 /* -------  Media Query ------- */
 @media all and (min-width: 480px){
+  html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+   
+}
   header {
     /* Changes the default setting from `block` to `flex`. */
     display: flex;
@@ -166,7 +174,7 @@ footer p {
         color: #bdbdbd;
       }
       main .item img {
-        display: flex;
+        
         flex-direction: column;
       }
       .change {
@@ -176,6 +184,8 @@ footer p {
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: center;
+       
         
       }
       .center {
@@ -222,5 +232,6 @@ footer p {
       .pad2{
         padding: 100px 0;
       }
+     
 }
  
